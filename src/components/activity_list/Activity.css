@@ -1,0 +1,67 @@
+.activity {
+  color: white;
+  border-radius: 15px;
+}
+.activity p {
+  margin: 0;
+}
+.activity-background {
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.activity .activity-info {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #1d204b;
+  height: 80%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.activity .activity-info .activity-name {
+  padding-top: 4vh;
+
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity .activity-info .activity-name .activity-satay img {
+  cursor: pointer;
+}
+.activity .activity-info .activity-time {
+  margin-top: 4vh;
+}
+
+.activity .activity-info .activity-time p:nth-child(1) {
+  font-size: 2.5em;
+}
+
+.activity .activity-info .activity-time p:nth-child(2) {
+  margin-top: 2vh;
+  color: #c2c5f9;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 750px) {
+  .activity .activity-info {
+    height: 100%;
+  }
+
+  .activity .activity-info .activity-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+  }
+
+  .activity .activity-info {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
