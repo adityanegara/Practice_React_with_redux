@@ -1,10 +1,7 @@
 .profile {
-  width: 20%;
-  margin-top: 5vh;
-  margin-left: 2vw;
   background-color: #1d204b;
   border-radius: 20px;
-  padding-bottom: 2vh;
+  padding-bottom: 1vh;
 }
 
 .profile .profile-section {
@@ -13,11 +10,10 @@
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  /* will be deleted */
 }
 
 .profile .profile-image {
-  margin: 5vh 3vw;
+  margin: 5vh 2.5vw;
 }
 .profile .profile-image img {
   width: 40%;
@@ -27,8 +23,8 @@
 }
 
 .profile .profile-name {
-  margin: 1vh 3vw;
-  padding-bottom: 7vh;
+  margin: 1vh 2.5vw;
+  padding-bottom: 10vh;
 }
 .profile .profile-name p:nth-child(1) {
   margin: 0;
@@ -43,15 +39,15 @@
   margin-right: 0;
   margin-bottom: 0;
   color: #fcf5ff;
-  font-size: 3em;
+  font-size: 2.5em;
   width: 50%;
 }
 
 .profile .profile-selector {
-  margin: 3vh 3vw;
+  margin: 3vh 2.5vw;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 2.5vh;
 }
 
 .profile .profile-selector button {
@@ -66,4 +62,50 @@
 
 .profile .profile-selector button:hover {
   color: #e3e5ee;
+}
+
+@media only screen and (max-width: 750px) {
+  .profile .profile-section {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile .profile-image {
+    width: 100%;
+    margin: 5vh 5vw;
+  }
+  .profile .profile-image img {
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #e8e5fe;
+  }
+
+  .profile .profile-name {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .profile .profile-name p:nth-child(2) {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .profile .profile-selector {
+    margin: 3vh 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .profile .profile-selector button {
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2em;
+
+    color: #5e619d;
+    border: none;
+    transition: ease-in 0.2s;
+  }
 }
