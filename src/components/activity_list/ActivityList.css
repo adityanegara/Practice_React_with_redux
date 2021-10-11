@@ -8,6 +8,6 @@
   .activity-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10vh;
+    gap: 5vh;
   }
 }

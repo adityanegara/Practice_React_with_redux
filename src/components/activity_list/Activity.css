@@ -50,14 +50,13 @@
 
 @media only screen and (max-width: 750px) {
   .activity .activity-info {
-    height: 100%;
   }
 
   .activity .activity-info .activity-time {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
   }
 
   .activity .activity-info {
