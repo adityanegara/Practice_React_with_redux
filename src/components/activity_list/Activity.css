@@ -6,6 +6,7 @@
   margin: 0;
 }
 .activity-background {
+  height: 20%;
   border-radius: 15px;
   background-repeat: no-repeat;
   background-position: right;
