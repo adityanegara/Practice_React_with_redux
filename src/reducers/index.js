@@ -89,6 +89,11 @@ const activityReducers = () =>{
     ];
 };
 
+const selectedTimeReducer = (action = null) =>{
+    return 'MONTH_SELECTED'
+}
+
 export default combineReducers({
     activity: activityReducers,
+    selectedTime : selectedTimeReducer
 });

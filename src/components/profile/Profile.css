@@ -109,3 +109,7 @@
     transition: ease-in 0.2s;
   }
 }
+
+.button-active {
+  color: #e3e5ee !important;
+}
